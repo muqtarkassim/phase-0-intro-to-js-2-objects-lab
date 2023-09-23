@@ -1,4 +1,12 @@
-const employee={}
+const employee={
+    breakfast:"eggs",
+    lunch:"chapoo",
+}
+/*const employer={
+    salry:2000,
+    break:'2months'
+
+}*/
 
 function updateEmployeeWithKeyAndValue(employee, key, value) {
     const updatedEmployee = { ...employee };
@@ -7,6 +15,8 @@ function updateEmployeeWithKeyAndValue(employee, key, value) {
 
     return updatedEmployee;
 }
+//console.log(updateEmployeeWithKeyAndValue(employer,'salrys',"canjera"))
+//console.log(employer)
 
 
 function destructivelyUpdateEmployeeWithKeyAndValue(employee, key, value){
@@ -20,6 +30,6 @@ function deleteFromEmployeeByKey(employee, key){
 }
 function destructivelyDeleteFromEmployeeByKey(employee, key){
    const updatedEmployee= delete employee[key]
-   return( updatedEmployee,
-employee)}
-
+   return (updatedEmployee,employee);
+}
+//console.log(deleteFromEmployeeByKey(employer,'salry'))
